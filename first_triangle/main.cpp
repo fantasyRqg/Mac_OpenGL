@@ -46,7 +46,8 @@ int main(void) {
 
     // Dark blue background
     glClearColor(0.0f, 0.0f, 0.4f, 0.0f);
-
+    glEnable(GL_CULL_FACE);
+    glFrontFace(GL_CCW);
     GLuint VertexArrayID;
     glGenVertexArrays(1, &VertexArrayID);
     glBindVertexArray(VertexArrayID);
